@@ -33,16 +33,7 @@
     label.appendChild(document.createTextNode(app.name));
     var tile = document.createElement("div");
     tile.className = "tile";
-    var tv = document.createElement("div");
-    tv.className = "tv";
-    tv.appendChild(art);
-    tile.appendChild(tv);
-    var parts = ["stand", "foot"];
-    for (var p = 0; p < parts.length; p++) {
-      var part = document.createElement("div");
-      part.className = parts[p];
-      tile.appendChild(part);
-    }
+    tile.appendChild(art);
     tile.appendChild(label);
     a.appendChild(tile);
     return a;
