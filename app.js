@@ -24,13 +24,27 @@
       img.alt = "";
       art.appendChild(img);
     } else {
-      art.appendChild(document.createTextNode(app.name.charAt(0)));
+      var letter = document.createElement("span");
+      letter.appendChild(document.createTextNode(app.name.charAt(0)));
+      art.appendChild(letter);
     }
     var label = document.createElement("div");
     label.className = "label";
     label.appendChild(document.createTextNode(app.name));
-    a.appendChild(art);
-    a.appendChild(label);
+    var tile = document.createElement("div");
+    tile.className = "tile";
+    var tv = document.createElement("div");
+    tv.className = "tv";
+    tv.appendChild(art);
+    tile.appendChild(tv);
+    var parts = ["stand", "foot"];
+    for (var p = 0; p < parts.length; p++) {
+      var part = document.createElement("div");
+      part.className = parts[p];
+      tile.appendChild(part);
+    }
+    tile.appendChild(label);
+    a.appendChild(tile);
     return a;
   }
 
