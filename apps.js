@@ -7,7 +7,7 @@ var TOP_APPS = [
   { name: "🚨 Cobra 2.0 🚨", image: "https://i.postimg.cc/BQ6fgVWW/B30BDBC8-013B-4D89-8B83-A0607664BD70.jpg", url: "https://apk.st/FFTNK&.apk" },
   { name: "🚨 Cobra Platinum 🚨", image: "https://i.postimg.cc/fWKND7ML/2026-01-29-13-58-51.jpg", url: "https://vp1.uk/YPMMY&.apk" },
   { name: "🚨 Cobra Eclipse 🚨", image: "https://i.postimg.cc/tJFSRrNr/2026-09-08-09-19-17.jpg", url: "https://apk.st/WDRXF&.apk" },
-  { name: "🚨 MediaBox 🚨", image: "https://i.postimg.cc/BnvZ1xxQ/2026-07-30-11-28-40.jpg", url: "http://sc4apps.cloud/clients/downloads/cobra/cob-mediabox-7410.apk" }
+  { name: "🚨 MediaBox 🚨", image: "https://i.postimg.cc/BnvZ1xxQ/2026-07-30-11-28-40.jpg", url: "https://www.mediafire.com/file/a2r0th2f1witga3/cob-mediabox-7410.apk/file" }
 ];
 
 var VOD_APPS = [
