@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>App Downloads</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #0b0f17; color: #f2f5fa; font-family: Arial, Helvetica, sans-serif; }
+  body { padding: 3vw 4vw 6vw; }
+
+  #gate { min-height: 80vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+  #gate h1 { font-size: 3vw; margin: 0 0 2vw; }
+  #pass, #gate button { font-size: 2.4vw; padding: 1vw 2vw; border-radius: 0.8vw; border: 0.3vw solid #2a3550; margin: 0.6vw; }
+  #pass { width: 36vw; background: #141b2b; color: #fff; text-align: center; letter-spacing: 0.3vw; text-transform: uppercase; }
+  #gate button { background: #1f6feb; color: #fff; font-weight: bold; cursor: pointer; }
+  #gate-error { color: #ff6b6b; font-size: 1.8vw; visibility: hidden; margin-top: 1vw; }
+
+  #main { display: none; }
+  .banner { background: #d92d20; color: #fff; font-weight: bold; text-align: center; font-size: 2.3vw; line-height: 1.3; padding: 1.4vw 2vw; border-radius: 1vw; margin-bottom: 1.5vw; }
+  h2 { font-size: 2.2vw; margin: 3.5vw 0 1.2vw; padding-bottom: 0.6vw; border-bottom: 0.2vw solid #2a3550; }
+  .row { display: flex; flex-wrap: wrap; margin: 0 -1vw; }
+  .card { width: 25%; padding: 1vw; color: inherit; text-decoration: none; outline: none; display: block; }
+  .art { background: #141b2b; border: 0.4vw solid transparent; border-radius: 1.2vw; height: 16vw; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: 7vw; font-weight: bold; color: #4b5b80; }
+  .art img { width: 100%; height: 100%; object-fit: contain; }
+  .label { text-align: center; font-size: 1.7vw; font-weight: bold; margin-top: 0.8vw; }
+
+  .card:focus .art, .card:hover .art { border-color: #ffd60a; box-shadow: 0 0 2.5vw rgba(255, 214, 10, 0.55); transform: scale(1.05); }
+  .card:focus .label { color: #ffd60a; }
+  #pass:focus, #gate button:focus { outline: none; border-color: #ffd60a; box-shadow: 0 0 2vw rgba(255, 214, 10, 0.55); }
+  .art { transition: transform 0.12s, box-shadow 0.12s; }
+
+  @media (max-width: 700px) {
+    .card { width: 50%; }
+    .art { height: 34vw; }
+    .banner, h2, #gate h1 { font-size: 5vw; }
+    .label, #gate-error { font-size: 4vw; }
+    #pass, #gate button { font-size: 5vw; }
+    #pass { width: 80vw; }
+  }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <h1>Enter Password</h1>
+  <form id="gate-form" autocomplete="off">
+    <input id="pass" class="focusable" type="text" autocapitalize="characters" autocorrect="off" spellcheck="false" aria-label="Password">
+    <br>
+    <button class="focusable" type="submit">ENTER</button>
+  </form>
+  <div id="gate-error">Wrong password, try again</div>
+</div>
+
+<div id="main">
+  <section>
+    <div class="banner">MUST INSTALL THESE TOP 4 APPS, EACH APP IS A DIFFERENT PROVIDER</div>
+    <div class="row" id="top-row"></div>
+  </section>
+  <section>
+    <h2>Alternative VOD Apps</h2>
+    <div class="row" id="vod-row"></div>
+  </section>
+  <section>
+    <h2>Other Apps</h2>
+    <div class="row" id="other-row"></div>
+  </section>
+</div>
+
+<script src="sha256.js"></script>
+<script src="apps.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
