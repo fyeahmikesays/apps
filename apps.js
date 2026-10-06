@@ -22,5 +22,5 @@ var OTHER_APPS = [
   { name: "⚽ Sports Listings ⚽", image: "https://i.postimg.cc/HsmWBGPJ/IMG-3972.jpg", url: "http://www.mediafire.com/file/bflf4kp75vkh3fv/app-release_sign_sign.apk/file" },
   { name: "🔥 COBRA TIVIMATE 🔥", image: "https://i.ibb.co/QQBGJgs/banner.png", url: "https://apk.st/FBAHH&.apk" },
   { name: "📥 Original Cobra2.0 📥", image: "https://i.ibb.co/0yKvxVmL/2025-02-18-11-11-34.jpg", url: "http://www.mediafire.com/file/bo4w7ctzfo4v3i9/CP_Cobra2.0_base.apk" },
-  { name: "📥 Original Eclipse 📥", image: "https://i.ibb.co/0hBvShC/03.jpg", url: "https://sc4apps.cloud/clients/downloads/cobra/ce293.apk" }
+  { name: "📥 Original Eclipse 📥", image: "https://i.ibb.co/0hBvShC/03.jpg", url: "http://sc4apps.cloud/clients/downloads/cobra/ce293.apk" }
 ];
